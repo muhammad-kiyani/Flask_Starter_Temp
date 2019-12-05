@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/custome.css')}}">
+    <title>Archcorp</title>
+  </head>
+  <body>
+
+
+    <div class="jumbotron custome-div-center " style="height: 71%;   box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),0 0  0 2px rgb(255,255,255),0.3em 0.3em 1em rgba(0,0,0,0.3);">
+
+      <div class="row">
+          <div class="col-sm-12 custome-drop-file">Upload your files here and click UPLOAD Button for download processed file click DOWNLOAD button</div>
+      </div>
+
+       <div class="row custome-button-style">
+          <div class="col-sm-12 custome-drop-file">
+
+            <form method="post" action="/" enctype="multipart/form-data">
+
+            <div class="image-upload">
+
+              <label for="file-input1">
+                <img  class="button-size" src="{{url_for('static',filename='images/document.png')}}"/>
+              </label>
+
+              <input  id="file-input1"   type="file"  name="file" autocomplete="off" required />
+
+              <label for="file-input3">
+                <img  class="button-size" src="{{url_for('static',filename='images/document.png')}}"/>
+              </label>
+
+              <input  id="file-input3"   type="file"  name="file2" autocomplete="off" required /><br>
+              <label style="margin-right:60px;">File 1</label>
+              <label>File 2</label>
+
+
+              <div class="image-upload">
+
+                <label for="file-input2">
+                  <img  class="button-size" src="{{url_for('static',filename='images/icons8.png')}}"/>
+                </label>
+
+                <input type="submit" id="file-input2" style="margin-right:20px;" value="Submit" /><br>
+                <label style="margin-right:2px;">Upload</label>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row custome-button-style">
+         <div class="col-sm-12 custome-drop-file">
+
+
+           <div class="image-upload">
+
+             <label for="file-input4">
+               <img  class="button-size-two" src="{{url_for('static',filename='images/icons8.png')}}"/>
+             </label>
+
+             <input  id="file-input4" style="margin-right:20px;" onClick="location.href='download.html'" value='Download File'/><br>
+             <label style="margin-right:2px;">Download</label>
+
+           </div>
+
+
+
+         </div>
+
+      </div>
+
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

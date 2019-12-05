@@ -1,0 +1,57 @@
+.custome-div-center {
+  background-color: #dfdfdf;
+  width: 50%;
+  height: 74%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custome-drop-file {
+
+  max-width: 300px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #525252;
+  margin: auto;
+  padding: 0 5px;
+
+
+}
+
+.custome-button-style{
+
+margin-top:5px;
+margin-bottom:5px;
+
+}
+
+.button-size{
+
+width:90px;
+height:90px;
+
+}
+
+.button-size-two{
+
+  width:40px;
+  height:40px;
+
+}
+
+.image-upload>input {
+  display: none;
+
+}
+
+.button-size-download{
+
+  margin-left: 450px;
+  width:50px;
+  height:50px;
+
+}
